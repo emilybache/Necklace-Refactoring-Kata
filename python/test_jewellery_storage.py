@@ -1,9 +1,7 @@
 import pytest
-from approvaltests import verify
 
-from jewellery_storage import Jewel, EarringType, Earring, JewelleryStorage, Necklace, NecklaceType, \
-    PendantNecklace, Jewellery, Ring, Pendant
-from packer import pack, pack_necklace
+from jewellery_storage import *
+from packer import pack
 
 
 @pytest.fixture
@@ -11,112 +9,8 @@ def jewellery_storage():
     return JewelleryStorage()
 
 
-def print_jewellery_storage(storage: JewelleryStorage):
-    contents = f"""\
-Jewellery Storage:
-    Box:
-        Ring Compartment: {storage.box.ring_compartment}
-        Top Shelf:        {storage.box.top_shelf}
-        Main Section:     {storage.box.main_section}
-    Tree:                 {storage.tree}
-    Travel Roll:          {storage.travel_roll}
-    Safe:                 {storage.safe}
-    On top of dresser:    {storage.dresser_top}
-"""
-    return contents
-
-
-def pack_item(item: Jewellery, storage: JewelleryStorage) -> str:
-    log = f"Packing item {item}"
-    if storage.is_in_travel_roll(item):
-        log += f" (is in travel roll)"
-    pack(item, storage)
-    log += "\n"
-    log += print_jewellery_storage(storage)
-    return log
-
-
 def test_pack_earring_stud(jewellery_storage):
     item = Earring(type=EarringType.Stud, stone=Jewel.Amber)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
+    pack(item, jewellery_storage)
+    # TODO: check it packed it correctly
 
-
-def test_pack_diamond_earring_stud(jewellery_storage):
-    item = Earring(type=EarringType.Stud, stone=Jewel.Diamond)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_earring_hoop(jewellery_storage):
-    item = Earring(type=EarringType.Hoop, stone=Jewel.Plain)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_earring_drop(jewellery_storage):
-    item = Earring(type=EarringType.Drop, stone=Jewel.Plain)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_earring_drop_with_stone(jewellery_storage):
-    item = Earring(type=EarringType.Drop, stone=Jewel.Pearl)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_earring_from_travel_roll(jewellery_storage):
-    item = Earring(type=EarringType.Drop, stone=Jewel.Plain)
-    jewellery_storage.travel_roll.append(item)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-def test_pack_necklace_from_travel_roll(jewellery_storage):
-    item = Necklace(stone=Jewel.Pearl, type=NecklaceType.Beads)
-    jewellery_storage.travel_roll.append(item)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_amber_necklace(jewellery_storage):
-    item = Necklace(stone=Jewel.Amber, type=NecklaceType.Beads)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-def test_pack_pendant(jewellery_storage):
-    item = Pendant(stone=Jewel.Amber)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-def test_pack_pendant_necklace(jewellery_storage):
-    item = PendantNecklace(stone=Jewel.Amber,
-                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
-                           pendant=Jewellery(stone=Jewel.Amber), type=NecklaceType.Pendant)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_diamond_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Diamond)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_favourite_diamond_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Diamond)
-    jewellery_storage.travel_roll.append(item)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Amber)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_unknown_item(jewellery_storage):
-    item = Jewellery(stone=Jewel.Plain)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
