@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 namespace NecklaceRefactoringKata.Tests
 {
     [TestClass()]
-    public class JewelleryStorageTests
+    public class PackTests
     {
         [TestMethod()]
-        public void PackTest_WhenEarringStud_PacksItInTopShelf()
+        public void Test_EarringStud_IsPackedInTopShelf()
         {
             //arrange
             var jewelleryStorage = new JewelleryStorage();
