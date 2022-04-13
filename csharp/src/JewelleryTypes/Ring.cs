@@ -2,11 +2,5 @@
 
 namespace NecklaceRefactoringKata.JewelleryTypes
 {
-    public record Ring(Jewel Stone) : JewelleryBase(Stone)
-    {
-        public override bool IsRing()
-        {
-            return true;
-        }
-    }
+    public record Ring(Jewel Stone) : JewelleryBase(Stone);
 }

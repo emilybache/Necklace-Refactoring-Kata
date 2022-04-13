@@ -8,9 +8,5 @@ namespace NecklaceRefactoringKata.JewelleryTypes
         {
             return Type == EarringType.Stud;
         }
-        public override bool IsEarring()
-        {
-            return true;
-        }
     }
 }
