@@ -1,0 +1,10 @@
+Packing item Pendant(stone=<Jewel.Amber: 4>)
+Jewellery Storage:
+    Box:
+        Ring Compartment: []
+        Top Shelf:        [Pendant(stone=<Jewel.Amber: 4>)]
+        Main Section:     []
+    Tree:                 []
+    Travel Roll:          []
+    Safe:                 []
+    On top of dresser:    []
