@@ -1,14 +1,13 @@
 from approvaltests import verify
 
-from jewellery_storage import JewelleryStorage, Necklace, Jewel, NecklaceType, PendantNecklace, Pendant, Jewellery
+from jewellery_storage import *
 from packer import pack_necklace
-from test_jewellery_storage import print_jewellery_storage, jewellery_storage
+from fixtures import jewellery_storage, print_jewellery_storage
 
 
 def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
+    "workflow shared by all tests in this file"
     log = f"Packing item {item}"
-    if storage.is_in_travel_roll(item):
-        log += f" (is in travel roll)"
     pack_necklace(item, storage)
     log += "\n"
     log += print_jewellery_storage(storage)
