@@ -7,12 +7,5 @@ using System.Threading.Tasks;
 
 namespace NecklaceRefactoringKata.Models
 {
-    public record Jewellery(Jewel Stone)
-    {
-        public virtual bool IsRing() { return false; }
-        public virtual bool IsSmall() { return false; }
-        public virtual bool IsEarring() { return false; }
-        public virtual bool IsNecklace() { return false; }
-        public virtual bool IsLarge() { return false; }
-    }
+    public record Jewellery(Jewel Stone, bool IsRing=false, bool IsSmall=false, bool IsEarring=false, bool IsNecklace=false, bool IsLarge=false);
 }
