@@ -2,7 +2,7 @@
 
 namespace NecklaceRefactoringKata.Models
 {
-    public abstract record Jewellery(Jewel Stone)
+    public abstract record JewelleryBase(Jewel Stone)
     {
         public virtual bool IsRing() { return false; }
         public virtual bool IsSmall() { return false; }

@@ -2,7 +2,7 @@
 
 namespace NecklaceRefactoringKata.Models
 {
-    public record Earring(EarringType Type, Jewel Stone) : Jewellery(Stone)
+    public record Earring(EarringType Type, Jewel Stone) : JewelleryBase(Stone)
     {
         public override bool IsSmall()
         {
