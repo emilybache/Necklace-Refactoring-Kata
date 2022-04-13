@@ -10,4 +10,5 @@ namespace NecklaceRefactoringKata.JewelleryTypes
         public virtual bool IsNecklace() { return false; }
         public virtual bool IsLarge() { return false; }
     }
+    //TODO: Replace "is a" methods with idiomatic "is"
 }
