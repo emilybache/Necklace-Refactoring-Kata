@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NecklaceRefactoringKataTests", "tests\NecklaceRefactoringKataTests.csproj", "{C29EFF99-1803-4892-B998-141385EE71CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NecklaceRefactoringKata", "src\NecklaceRefactoringKata.csproj", "{B816365D-31AB-4E62-8B98-171B14BD5B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C29EFF99-1803-4892-B998-141385EE71CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29EFF99-1803-4892-B998-141385EE71CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29EFF99-1803-4892-B998-141385EE71CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29EFF99-1803-4892-B998-141385EE71CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B816365D-31AB-4E62-8B98-171B14BD5B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B816365D-31AB-4E62-8B98-171B14BD5B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B816365D-31AB-4E62-8B98-171B14BD5B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B816365D-31AB-4E62-8B98-171B14BD5B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ED3E596-BCFD-4C25-AA8C-B20F68A82349}
+	EndGlobalSection
+EndGlobal
