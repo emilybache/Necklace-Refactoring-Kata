@@ -8,7 +8,7 @@ class Packer
     {
         if ($item->stone === Jewel::Diamond) {
             $storage->safe[] = $item;
-        } elseif ($item->isLarge()) {
+        } elseif (!$item->isLarge()) {
             $storage->box->topShelf[] = $item;
         } elseif ($item->type === NecklaceType::Beads || $item->type === NecklaceType::Chain) {
             $storage->tree[] = $item;
@@ -19,7 +19,7 @@ class Packer
         }
     }
 
-    public function pack(Jewellery $item, JewelleryStorage $storage): void
+    public static function pack(Jewellery $item, JewelleryStorage $storage): void
     {
         if ($storage->isInTravelRoll($item) && $item->isRing()) {
             $storage->box->ringCompartment[] = $item;
