@@ -7,17 +7,17 @@ class JewelleryBox
     /**
      * @var Ring[]
      */
-    public readonly array $ringCompartment;
+    public array $ringCompartment;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $topShelf;
+    public array $topShelf;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $mainSection;
+    public array $mainSection;
 
 
     public function __construct()

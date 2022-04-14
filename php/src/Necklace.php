@@ -11,7 +11,7 @@ enum NecklaceType {
 
 class Necklace extends Jewellery
 {
-    public function __construct(private NecklaceType $type)
+    public function __construct(public NecklaceType $type)
     {
     }
 

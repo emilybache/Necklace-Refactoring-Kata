@@ -11,7 +11,7 @@ enum Jewel {
 
 class Jewellery
 {
-    public function __construct(private Jewel $stone)
+    public function __construct(public Jewel $stone)
     {
     }
 

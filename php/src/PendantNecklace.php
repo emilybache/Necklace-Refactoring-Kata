@@ -4,7 +4,7 @@ namespace NecklaceRefactoringKata;
 
 class PendantNecklace extends Necklace
 {
-    public function __construct(private Necklace $chain, private Jewellery $pendant)
+    public function __construct(public Necklace $chain, public Jewellery $pendant)
     {
     }
 

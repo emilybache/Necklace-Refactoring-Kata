@@ -4,27 +4,27 @@ namespace NecklaceRefactoringKata;
 
 class JewelleryStorage
 {
-    public readonly JewelleryBox $box;
+    public JewelleryBox $box;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $tree;
+    public array $tree;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $travelRoll;
+    public array $travelRoll;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $safe;
+    public array $safe;
 
     /**
      * @var Jewellery[]
      */
-    public readonly array $dresserTop;
+    public array $dresserTop;
 
     public function __construct()
     {

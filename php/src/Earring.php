@@ -10,7 +10,7 @@ enum EarringType {
 
 class Earring extends Jewellery
 {
-    public function __construct(private EarringType $type)
+    public function __construct(public EarringType $type)
     {
     }
 
