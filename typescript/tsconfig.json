@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "noLib": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["es2020", "dom"],
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules", "**/*/dist"]
+}

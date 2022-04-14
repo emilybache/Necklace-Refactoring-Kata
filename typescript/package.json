@@ -1,0 +1,24 @@
+{
+  "name": "typescript-kata-boilerplate",
+  "version": "1.0.0",
+  "description": "Quick boilerplate for writing TDD katas",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix 'src/**/*.{ts,tsx}'",
+    "test": "jest"
+  },
+  "author": "bob.gregory@cazoo.co.uk",
+  "license": "MIT",
+  "devDependencies": {
+    "@cazoo/eslint-plugin-eslint": "^1.0.2",
+    "@types/jest": "^27.4.0",
+    "esbuild": "^0.14.31",
+    "eslint": "^7.32.0",
+    "jest": "^27.4.7",
+    "jest-esbuild": "^0.2.6",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "esbuild-jest": "^0.5.0"
+  }
+}
