@@ -2,7 +2,10 @@
 
 namespace NecklaceRefactoringKata;
 
-class Ring
+class Ring extends Jewellery
 {
-
+    public function isRing(): bool
+    {
+        return true;
+    }
 }
