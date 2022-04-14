@@ -10,13 +10,13 @@ enum EarringType {
 
 class Earring extends Jewellery
 {
-    public function __construct(private EarringType $earringType)
+    public function __construct(private EarringType $type)
     {
     }
 
     public function isSmall(): bool
     {
-        return $this->earringType === EarringType::Stud;
+        return $this->type === EarringType::Stud;
     }
 
     public function isEarring(): bool
