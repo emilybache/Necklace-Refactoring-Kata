@@ -7,11 +7,11 @@ Jewellery Storage:
 
 [%autowidth]
 |====
-.3+| Box | Ring Compartment |   []
-| Top Shelf |                   [Jewellery(stone=<Jewel.Amber: 4>)]
-| Main Section |                []
-2+| Tree |                      [Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>)]
-2+| Travel Roll |               []
-2+| Safe |                      []
-2+| On top of dresser |         []
+.3+| Box | Ring Compartment |   
+| Top Shelf |                   Jewellery of Amber
+| Main Section |                
+2+| Tree |                      Chain Necklace of Plain
+2+| Travel Roll |               
+2+| Safe |                      
+2+| On top of dresser |         
 |====

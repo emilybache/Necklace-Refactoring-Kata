@@ -7,11 +7,11 @@ Jewellery Storage:
 
 [%autowidth]
 |====
-.3+| Box | Ring Compartment |   []
-| Top Shelf |                   []
-| Main Section |                []
-2+| Tree |                      []
-2+| Travel Roll |               []
-2+| Safe |                      []
-2+| On top of dresser |         [Jewellery(stone=<Jewel.Plain: 1>)]
+.3+| Box | Ring Compartment |   
+| Top Shelf |                   
+| Main Section |                
+2+| Tree |                      
+2+| Travel Roll |               
+2+| Safe |                      
+2+| On top of dresser |         Jewellery of Plain
 |====

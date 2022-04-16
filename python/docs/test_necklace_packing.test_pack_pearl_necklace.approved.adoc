@@ -6,11 +6,11 @@ Jewellery Storage:
 
 [%autowidth]
 |====
-.3+| Box | Ring Compartment |   []
-| Top Shelf |                   []
-| Main Section |                []
-2+| Tree |                      [Necklace(stone=<Jewel.Pearl: 3>, type=<NecklaceType.Beads: 1>)]
-2+| Travel Roll |               []
-2+| Safe |                      []
-2+| On top of dresser |         []
+.3+| Box | Ring Compartment |   
+| Top Shelf |                   
+| Main Section |                
+2+| Tree |                      Beads Necklace of Pearl
+2+| Travel Roll |               
+2+| Safe |                      
+2+| On top of dresser |         
 |====
