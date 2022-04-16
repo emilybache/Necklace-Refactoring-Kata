@@ -1,8 +1,8 @@
 = Pack unknown item
 
-----
-Packing item Jewellery(stone=<Jewel.Plain: 1>)
-----
+Packing item *Jewellery of Plain*
+
+
 Jewellery Storage:
 
 [%autowidth]

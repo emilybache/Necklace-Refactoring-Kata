@@ -1,8 +1,8 @@
 = Pack favourite diamond ring
 
-----
-Packing item Ring(stone=<Jewel.Diamond: 2>) (is in travel roll)
-----
+Packing item *Ring of Diamond* (is in travel roll)
+
+
 Jewellery Storage:
 
 [%autowidth]

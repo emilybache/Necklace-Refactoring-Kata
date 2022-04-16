@@ -1,8 +1,8 @@
 = Pack earring drop with stone
 
-----
-Packing item Earring(stone=<Jewel.Pearl: 3>, type=<EarringType.Drop: 3>)
-----
+Packing item *Drop Earring of Pearl*
+
+
 Jewellery Storage:
 
 [%autowidth]

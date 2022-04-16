@@ -1,8 +1,7 @@
 = Pack diamond necklace
 
-----
-Packing item Necklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Chain: 2>)
-----
+Packing item *Chain Necklace of Diamond*
+
 Jewellery Storage:
 
 [%autowidth]

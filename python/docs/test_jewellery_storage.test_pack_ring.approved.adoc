@@ -1,8 +1,8 @@
 = Pack ring
 
-----
-Packing item Ring(stone=<Jewel.Amber: 4>)
-----
+Packing item *Ring of Amber*
+
+
 Jewellery Storage:
 
 [%autowidth]

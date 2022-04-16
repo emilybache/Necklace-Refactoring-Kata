@@ -1,8 +1,8 @@
 = Pack earring from travel roll
 
-----
-Packing item Earring(stone=<Jewel.Plain: 1>, type=<EarringType.Drop: 3>) (is in travel roll)
-----
+Packing item *Drop Earring of Plain* (is in travel roll)
+
+
 Jewellery Storage:
 
 [%autowidth]

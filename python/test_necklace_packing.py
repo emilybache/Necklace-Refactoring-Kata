@@ -2,17 +2,15 @@ from approvaltests import verify
 
 from jewellery_storage import *
 from packer import pack_necklace
-from fixtures import jewellery_storage, print_jewellery_storage
+from fixtures import jewellery_storage, print_jewellery_storage, print_jewellery
 from doc_as_test_pytest import DocAsTest, doc, doc_module
-
 
 def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
     "workflow shared by all tests in this file"
-    log = "----\n"
-    log += f"Packing item {item}"
+    log = ""
+    log += f"Packing item *{print_jewellery(item)}*"
+    log += "\n\n"
     pack_necklace(item, storage)
-    log += "\n"
-    log += "----\n"
     log += print_jewellery_storage(storage)
     return log
 

@@ -1,8 +1,7 @@
 = Pack pearl necklace
 
-----
-Packing item Necklace(stone=<Jewel.Pearl: 3>, type=<NecklaceType.Beads: 1>)
-----
+Packing item *Beads Necklace of Pearl*
+
 Jewellery Storage:
 
 [%autowidth]

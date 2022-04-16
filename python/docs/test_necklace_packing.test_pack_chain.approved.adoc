@@ -1,8 +1,7 @@
 = Pack chain
 
-----
-Packing item Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>)
-----
+Packing item *Chain Necklace of Plain*
+
 Jewellery Storage:
 
 [%autowidth]

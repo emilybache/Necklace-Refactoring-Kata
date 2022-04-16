@@ -1,8 +1,8 @@
 = Pack diamond earring stud
 
-----
-Packing item Earring(stone=<Jewel.Diamond: 2>, type=<EarringType.Stud: 1>)
-----
+Packing item *Stud Earring of Diamond*
+
+
 Jewellery Storage:
 
 [%autowidth]

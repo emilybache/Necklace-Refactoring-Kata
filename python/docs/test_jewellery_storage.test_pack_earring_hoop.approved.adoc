@@ -1,8 +1,8 @@
 = Pack earring hoop
 
-----
-Packing item Earring(stone=<Jewel.Plain: 1>, type=<EarringType.Hoop: 2>)
-----
+Packing item *Hoop Earring of Plain*
+
+
 Jewellery Storage:
 
 [%autowidth]
