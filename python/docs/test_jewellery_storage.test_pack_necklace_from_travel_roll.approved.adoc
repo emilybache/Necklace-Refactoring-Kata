@@ -1,4 +1,6 @@
-Packing item Necklace(stone=<Jewel.Pearl: 3>, type=<NecklaceType.Beads: 1>)
+= Pack necklace from travel roll
+
+Packing item Necklace(stone=<Jewel.Pearl: 3>, type=<NecklaceType.Beads: 1>) (is in travel roll)
 Jewellery Storage:
     Box:
         Ring Compartment: []

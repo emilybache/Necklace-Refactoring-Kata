@@ -1,3 +1,5 @@
+= Pack pendant
+
 Packing item Pendant(stone=<Jewel.Amber: 4>)
 Jewellery Storage:
     Box:

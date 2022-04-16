@@ -1,3 +1,5 @@
+= Pack amber necklace
+
 Packing item Necklace(stone=<Jewel.Amber: 4>, type=<NecklaceType.Beads: 1>)
 Jewellery Storage:
     Box:

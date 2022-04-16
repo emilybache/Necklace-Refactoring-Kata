@@ -1,4 +1,6 @@
-Packing item Earring(stone=<Jewel.Diamond: 2>, type=<EarringType.Stud: 1>)
+= Pack diamond necklace
+
+Packing item Necklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Chain: 2>)
 Jewellery Storage:
     Box:
         Ring Compartment: []
@@ -6,5 +8,5 @@ Jewellery Storage:
         Main Section:     []
     Tree:                 []
     Travel Roll:          []
-    Safe:                 [Earring(stone=<Jewel.Diamond: 2>, type=<EarringType.Stud: 1>)]
+    Safe:                 [Necklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Chain: 2>)]
     On top of dresser:    []

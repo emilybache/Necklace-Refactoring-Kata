@@ -1,7 +1,9 @@
-Packing item Ring(stone=<Jewel.Amber: 4>)
+= Pack favourite diamond ring
+
+Packing item Ring(stone=<Jewel.Diamond: 2>) (is in travel roll)
 Jewellery Storage:
     Box:
-        Ring Compartment: [Ring(stone=<Jewel.Amber: 4>)]
+        Ring Compartment: [Ring(stone=<Jewel.Diamond: 2>)]
         Top Shelf:        []
         Main Section:     []
     Tree:                 []
