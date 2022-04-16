@@ -6,6 +6,10 @@ from packer import pack_necklace
 from test_jewellery_storage import jewellery_storage
 from fixtures import print_jewellery_storage
 
+from fixtures import jewellery_storage, print_jewellery_storage
+from doc_as_test_pytest import DocAsTest, doc, doc_module
+
+
 
 def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
     "workflow shared by all tests in this file"
@@ -15,13 +19,37 @@ def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
     log += print_jewellery_storage(storage)
     return log
 
-def test_pack_pearl_necklace(jewellery_storage):
+def test_pack_pearl_necklace(doc, jewellery_storage):
     item = Necklace(stone=Jewel.Pearl, type=NecklaceType.Beads)
-    pack_necklace(item, jewellery_storage)
-    # TODO: check it packed it correctly
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
+
+def test_pack_amber_necklace(doc, jewellery_storage):
+    item = Necklace(stone=Jewel.Amber, type=NecklaceType.Beads)
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
+
+def test_pack_diamond_necklace(doc, jewellery_storage):
+    item = Necklace(stone=Jewel.Diamond, type=NecklaceType.Chain)
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
+
+def test_pack_chain(doc, jewellery_storage):
+    item = Necklace(stone=Jewel.Plain, type=NecklaceType.Chain)
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
 
 
-def test_pack_diamond_pendant_necklace(jewellery_storage):
-    item = PendantNecklace(chain=Necklace(Jewel.Plain, NecklaceType.Chain), pendant=Pendant(Jewel.Diamond))
-    pack_necklace(item, jewellery_storage)
-    # TODO: new feature - only the pendant should be in the safe, not the chain
+def test_pack_pendant_necklace(doc, jewellery_storage):
+    item = PendantNecklace(stone=Jewel.Amber,
+                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Amber), type=NecklaceType.Pendant)
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
+
+def test_pack_pendant_necklace_large_chain(doc, jewellery_storage):
+    item = PendantNecklace(stone=Jewel.Amber,
+                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.LongChain),
+                           pendant=Jewellery(stone=Jewel.Amber), type=NecklaceType.Pendant)
+    log = pack_necklace_item(item, jewellery_storage)
+    doc.write(log)
