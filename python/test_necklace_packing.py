@@ -13,10 +13,12 @@ from doc_as_test_pytest import DocAsTest, doc, doc_module
 
 def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
     "workflow shared by all tests in this file"
-    log = f"Packing item {item}"
+    log = "----\n"
+    log += f"Packing item {item}"
     pack_necklace(item, storage)
     log += "\n"
     log += print_jewellery_storage(storage)
+    log += "----"
     return log
 
 def test_pack_pearl_necklace(doc, jewellery_storage):
