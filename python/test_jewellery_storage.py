@@ -5,25 +5,25 @@ from approvaltests import verify
 from jewellery_storage import *
 from packer import pack
 
-
 @pytest.fixture
 def jewellery_storage():
     return JewelleryStorage()
 
 from packer import pack
-from fixtures import jewellery_storage, print_jewellery_storage
+
+from fixtures import jewellery_storage, print_jewellery_storage, print_jewellery
 from doc_as_test_pytest import DocAsTest, doc, doc_module
 
 
 def pack_item(item: Jewellery, storage: JewelleryStorage) -> str:
     "workflow shared by all tests in this file"
-    log = "----\n"
-    log += f"Packing item {item}"
+    log = ""
+    log += f"Packing item *{print_jewellery(item)}*"
     if storage.is_in_travel_roll(item):
         log += f" (is in travel roll)"
+    log += "\n\n"
     pack(item, storage)
     log += "\n"
-    log += "----\n"
     log += print_jewellery_storage(storage)
     return log
 
