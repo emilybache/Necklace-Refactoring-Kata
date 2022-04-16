@@ -1,5 +1,6 @@
 = Pack pearl necklace
 
+----
 Packing item Necklace(stone=<Jewel.Pearl: 3>, type=<NecklaceType.Beads: 1>)
 Jewellery Storage:
     Box:
@@ -10,3 +11,4 @@ Jewellery Storage:
     Travel Roll:          []
     Safe:                 []
     On top of dresser:    []
+----

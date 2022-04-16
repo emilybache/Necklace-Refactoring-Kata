@@ -1,5 +1,6 @@
 = Pack ring
 
+----
 Packing item Ring(stone=<Jewel.Amber: 4>)
 Jewellery Storage:
     Box:
@@ -10,3 +11,4 @@ Jewellery Storage:
     Travel Roll:          []
     Safe:                 []
     On top of dresser:    []
+----

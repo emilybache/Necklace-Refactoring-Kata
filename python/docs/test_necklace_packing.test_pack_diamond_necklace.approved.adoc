@@ -1,5 +1,6 @@
 = Pack diamond necklace
 
+----
 Packing item Necklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Chain: 2>)
 Jewellery Storage:
     Box:
@@ -10,3 +11,4 @@ Jewellery Storage:
     Travel Roll:          []
     Safe:                 [Necklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Chain: 2>)]
     On top of dresser:    []
+----

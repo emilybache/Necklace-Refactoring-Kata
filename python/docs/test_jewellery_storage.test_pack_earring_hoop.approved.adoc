@@ -1,5 +1,6 @@
 = Pack earring hoop
 
+----
 Packing item Earring(stone=<Jewel.Plain: 1>, type=<EarringType.Hoop: 2>)
 Jewellery Storage:
     Box:
@@ -10,3 +11,4 @@ Jewellery Storage:
     Travel Roll:          []
     Safe:                 []
     On top of dresser:    []
+----
