@@ -23,8 +23,8 @@ def pack_item(item: Jewellery, storage: JewelleryStorage) -> str:
         log += f" (is in travel roll)"
     pack(item, storage)
     log += "\n"
+    log += "----\n"
     log += print_jewellery_storage(storage)
-    log += "----"
     return log
 
 

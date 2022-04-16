@@ -17,8 +17,8 @@ def pack_necklace_item(item: Necklace, storage: JewelleryStorage) -> str:
     log += f"Packing item {item}"
     pack_necklace(item, storage)
     log += "\n"
+    log += "----\n"
     log += print_jewellery_storage(storage)
-    log += "----"
     return log
 
 def test_pack_pearl_necklace(doc, jewellery_storage):
