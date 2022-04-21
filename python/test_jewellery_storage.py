@@ -100,3 +100,16 @@ def test_pack_unknown_item(jewellery_storage):
     item = Jewellery(stone=Jewel.Plain)
     log = pack_item(item, jewellery_storage)
     verify(log)
+
+def test_pack_long_chain(jewellery_storage):
+    item = Necklace(stone=Jewel.Plain, type=NecklaceType.LongChain)
+    log = pack_item(item, jewellery_storage)
+    verify(log)
+
+def test_pack_diamond_pendant_necklace(jewellery_storage):
+    item = PendantNecklace(stone=Jewel.Diamond,
+                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Diamond), type=NecklaceType.Pendant)
+    log = pack_item(item, jewellery_storage)
+    verify(log)
+

@@ -1,0 +1,10 @@
+Packing item Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.LongChain: 4>)
+Jewellery Storage:
+    Box:
+        Ring Compartment: []
+        Top Shelf:        []
+        Main Section:     []
+    Tree:                 [Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.LongChain: 4>)]
+    Travel Roll:          []
+    Safe:                 []
+    On top of dresser:    []
