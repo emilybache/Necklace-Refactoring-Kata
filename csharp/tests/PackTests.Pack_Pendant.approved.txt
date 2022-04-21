@@ -1,0 +1,10 @@
+﻿Packing item Pendant { Stone = Amber }
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        Pendant { Stone = Amber }
+    Main Section:     
+Tree:                 
+Travel Roll:          
+Safe:                 
+On top of dresser:    

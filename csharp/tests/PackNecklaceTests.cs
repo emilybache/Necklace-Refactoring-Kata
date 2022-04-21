@@ -20,28 +20,12 @@ namespace NecklaceRefactoringKata.Tests
                 log += $" (is in travel roll)";
             Packer.PackNecklace(item, storage);
             log += "\n";
-            log += PrintJewelleryStorage(storage);
+            log += Printers.PrintJewelleryStorage(storage);
             return log;
         }
 
-        string PrintJewelleryStorage(JewelleryStorage storage)
-        {
-            return $@"Jewellery Storage:
-Box:
-    Ring Compartment: {PrintList(storage.Box.RingCompartment)}
-    Top Shelf:        {PrintList(storage.Box.TopShelf)}
-    Main Section:     {PrintList(storage.Box.MainSection)}
-Tree:                 {PrintList(storage.Tree)}
-Travel Roll:          {PrintList(storage.TravelRoll)}
-Safe:                 {PrintList(storage.Safe)}
-On top of dresser:    {PrintList(storage.DresserTop)}
-";
-        }
 
-        string PrintList(List<JewelleryBase> items)
-        {
-            return string.Join(", ", items);
-        }
+
 
         [TestMethod()]
         public void PackPearlNecklace()

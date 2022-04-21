@@ -76,12 +76,6 @@ class Pendant(Jewellery):
     def is_small(self):
         return True
 
-@dataclasses.dataclass
-class Ring(Jewellery):
-    def is_ring(self):
-        return True
-
-
 class JewelleryBox:
     def __init__(self):
         self.ring_compartment = []

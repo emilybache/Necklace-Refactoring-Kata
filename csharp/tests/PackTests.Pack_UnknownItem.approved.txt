@@ -1,0 +1,10 @@
+﻿Packing item JewelleryBase { Stone = Plain }
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        
+    Main Section:     
+Tree:                 
+Travel Roll:          
+Safe:                 
+On top of dresser:    JewelleryBase { Stone = Plain }

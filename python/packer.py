@@ -14,14 +14,10 @@ def pack_necklace(item: Necklace, storage: JewelleryStorage):
 
 
 def pack(item: Jewellery, storage: JewelleryStorage):
-    if storage.is_in_travel_roll(item) and item.is_ring():
-        storage.box.ring_compartment.append(item)
-    elif storage.is_in_travel_roll(item) and not item.is_large():
+    if storage.is_in_travel_roll(item) and not item.is_large():
         storage.box.top_shelf.append(item)
     elif item.stone == Jewel.Diamond:
         storage.safe.append(item)
-    elif item.is_ring():
-        storage.box.ring_compartment.append(item)
     elif item.is_small():
         storage.box.top_shelf.append(item)
     elif item.is_earring() and item.type == EarringType.Hoop:

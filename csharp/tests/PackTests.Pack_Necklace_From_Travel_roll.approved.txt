@@ -1,0 +1,10 @@
+﻿Packing item Necklace { Stone = Pearl, Type = Beads } (is in travel roll)
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        
+    Main Section:     
+Tree:                 Necklace { Stone = Pearl, Type = Beads }
+Travel Roll:          
+Safe:                 
+On top of dresser:    

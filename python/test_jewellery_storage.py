@@ -77,25 +77,6 @@ def test_pack_pendant_necklace(jewellery_storage):
     verify(log)
 
 
-def test_pack_diamond_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Diamond)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_favourite_diamond_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Diamond)
-    jewellery_storage.travel_roll.append(item)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
-def test_pack_ring(jewellery_storage):
-    item = Ring(stone=Jewel.Amber)
-    log = pack_item(item, jewellery_storage)
-    verify(log)
-
-
 def test_pack_unknown_item(jewellery_storage):
     item = Jewellery(stone=Jewel.Plain)
     log = pack_item(item, jewellery_storage)
