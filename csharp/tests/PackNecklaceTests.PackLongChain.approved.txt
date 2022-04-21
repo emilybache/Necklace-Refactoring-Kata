@@ -1,0 +1,10 @@
+﻿Packing item Necklace { Stone = Plain, Type = LongChain }
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        
+    Main Section:     
+Tree:                 Necklace { Stone = Plain, Type = LongChain }
+Travel Roll:          
+Safe:                 
+On top of dresser:    

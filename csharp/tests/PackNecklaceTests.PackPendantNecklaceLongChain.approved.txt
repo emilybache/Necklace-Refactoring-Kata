@@ -1,0 +1,10 @@
+﻿Packing item PendantNecklace { Stone = Amber, Type = Pendant, Chain = Necklace { Stone = Plain, Type = LongChain }, Pendant = Pendant { Stone = Amber } }
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        Pendant { Stone = Amber }
+    Main Section:     
+Tree:                 Necklace { Stone = Plain, Type = LongChain }
+Travel Roll:          
+Safe:                 
+On top of dresser:    
