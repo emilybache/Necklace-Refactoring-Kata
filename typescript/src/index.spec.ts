@@ -1,7 +1,8 @@
-import { add } from ".";
+import { makeRing } from "./jewellery";
 
-describe("When adding two numbers", () => {
-  it("should, like, work", () => {
-    expect(add(1, 2)).toBe(3);
+describe("The packer", () => {
+  it("When packing a ring", () => {
+    const ring = makeRing("Amber");
+    expect(ring.size()).toBe("Small");
   });
 });

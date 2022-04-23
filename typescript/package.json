@@ -1,13 +1,13 @@
 {
-  "name": "typescript-kata-boilerplate",
+  "name": "Necklace-refactoring-kata",
   "version": "1.0.0",
-  "description": "Quick boilerplate for writing TDD katas",
+  "description": "Necklace refactoring kata in typescript",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix 'src/**/*.{ts,tsx}'",
     "test": "jest"
   },
-  "author": "bob.gregory@cazoo.co.uk",
+  "author": "bob@codefiend.co.uk",
   "license": "MIT",
   "devDependencies": {
     "@cazoo/eslint-plugin-eslint": "^1.0.2",
