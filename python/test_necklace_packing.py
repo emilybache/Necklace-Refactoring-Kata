@@ -1,4 +1,3 @@
-from approvaltests import verify
 
 from jewellery_storage import *
 from packer import pack_necklace

@@ -4,7 +4,7 @@
     {
         Beads,
         Chain,
-        LongChain,
-        Pendant
+        Pendant,
+        LongChain
     }
 }
