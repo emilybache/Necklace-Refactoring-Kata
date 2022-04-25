@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`From travellroll: Amber Beads necklace: Amber Beads necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Amber Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Amber Chain necklace: Amber Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Amber Stud earrings: Amber Stud earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Amber ring: Amber ring 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Beads necklace with Pearl pendant: Beads necklace with Pearl pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Diamond Chain necklace: Diamond Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond Chain necklace
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Diamond Stud earrings: Diamond Stud earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond Stud earrings
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Diamond ring: Diamond ring 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond ring
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: LongChain necklace with Amber pendant: LongChain necklace with Amber pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain LongChain necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Pearl Beads necklace: Pearl Beads necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Pearl Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Pearl Drop earrings: Pearl Drop earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Plain Chain necklace: Plain Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Plain Drop earrings: Plain Drop earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`From travellroll: Plain Hoop earrings: Plain Hoop earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain Hoop earrings
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Amber Beads necklace: Amber Beads necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Amber Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Amber Chain necklace: Amber Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Amber Stud earrings: Amber Stud earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Amber ring: Amber ring 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Beads necklace with Pearl pendant: Beads necklace with Pearl pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Diamond Chain necklace: Diamond Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond Chain necklace
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Diamond Stud earrings: Diamond Stud earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond Stud earrings
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Diamond ring: Diamond ring 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond ring
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: LongChain necklace with Amber pendant: LongChain necklace with Amber pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain LongChain necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Pearl Beads necklace: Pearl Beads necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Pearl Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Plain Chain necklace: Plain Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Plain Drop earrings: Plain Drop earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Plain Hoop earrings: Plain Hoop earrings 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain Hoop earrings
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack item: Plain Pendant: Plain Pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Amber Chain necklace: Amber Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Beads necklace with Pearl pendant: Beads necklace with Pearl pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Chain necklace with Diamond pendant: Chain necklace with Diamond pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Diamond Chain necklace: Diamond Chain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 
+  Travel Roll:          
+  Safe:                 Diamond Chain necklace
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: LongChain necklace with Diamond pendant: LongChain necklace with Diamond pendant 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain LongChain necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Pearl Beads necklace: Pearl Beads necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Pearl Beads necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
+
+exports[`Pack necklace: Plain LongChain necklace: Plain LongChain necklace 1`] = `
+"
+Jewellery Storage:
+  Box:
+      Ring Compartment: 
+      Top Shelf:        
+      Main Section:     
+  Tree:                 Plain LongChain necklace
+  Travel Roll:          
+  Safe:                 
+  On top of dresser:    
+"
+`;
