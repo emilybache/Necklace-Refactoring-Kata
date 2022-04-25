@@ -18,8 +18,8 @@ def pack_item(item: Jewellery, storage: JewelleryStorage) -> str:
 
 def test_pack_earring_stud(jewellery_storage):
     item = Earring(type=EarringType.Stud, stone=Jewel.Amber)
-    pack(item, jewellery_storage)
-    # TODO: check it packed it correctly
+    log = pack_item(item, jewellery_storage)
+    verify(log)
 
 
 def test_pack_diamond_earring_stud(jewellery_storage):
@@ -93,4 +93,3 @@ def test_pack_diamond_pendant_necklace(jewellery_storage):
                            pendant=Jewellery(stone=Jewel.Diamond), type=NecklaceType.Pendant)
     log = pack_item(item, jewellery_storage)
     verify(log)
-

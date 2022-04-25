@@ -1,0 +1,10 @@
+Packing item Earring(stone=<Jewel.Plain: 1>, type=<EarringType.Drop: 3>)
+Jewellery Storage:
+    Box:
+        Ring Compartment: []
+        Top Shelf:        []
+        Main Section:     [Earring(stone=<Jewel.Plain: 1>, type=<EarringType.Drop: 3>)]
+    Tree:                 []
+    Travel Roll:          []
+    Safe:                 []
+    On top of dresser:    []
