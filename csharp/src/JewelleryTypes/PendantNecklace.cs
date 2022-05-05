@@ -6,9 +6,9 @@ namespace NecklaceRefactoringKata.JewelleryTypes
         : Necklace(NecklaceType.Pendant, Pendant.Stone)
     {
         
-        public override bool IsLarge()
+        public override bool IsHeavy()
         {
-            return Chain.IsLarge() || Pendant.IsLarge();
+            return Chain.IsHeavy() || Pendant.IsHeavy();
         }
     }
 }

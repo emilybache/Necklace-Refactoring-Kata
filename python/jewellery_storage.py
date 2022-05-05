@@ -38,7 +38,7 @@ class Jewellery:
     def is_necklace(self):
         return False
 
-    def is_large(self):
+    def is_heavy(self):
         return False
 
 
@@ -66,7 +66,7 @@ class Necklace(Jewellery):
     def is_necklace(self):
         return True
 
-    def is_large(self):
+    def is_heavy(self):
         return self.type is NecklaceType.Beads or self.type is NecklaceType.LongChain
 
 
@@ -82,8 +82,8 @@ class PendantNecklace(Jewellery):
         self.pendant = pendant
         self.type = NecklaceType.Pendant
 
-    def is_large(self):
-        return self.chain.is_large() or self.pendant.is_large()
+    def is_heavy(self):
+        return self.chain.is_heavy() or self.pendant.is_heavy()
 
     def is_necklace(self):
         return True

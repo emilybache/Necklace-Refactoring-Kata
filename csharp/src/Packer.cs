@@ -9,7 +9,7 @@ namespace NecklaceRefactoringKata
         {
             if (item.Stone == Jewel.Diamond)
                 storage.Safe.Add(item);
-            else if (!item.IsLarge())
+            else if (!item.IsHeavy())
                 storage.Box.TopShelf.Add(item);
             else if (item is PendantNecklace pendantNecklace)
             {
@@ -22,7 +22,7 @@ namespace NecklaceRefactoringKata
 
         public static void Pack(JewelleryBase item, JewelleryStorage storage)
         {
-            if (storage.IsInTravelRoll(item) && !item.IsLarge())
+            if (storage.IsInTravelRoll(item) && !item.IsHeavy())
                 storage.Box.TopShelf.Add(item);
             else if (item.Stone == Jewel.Diamond)
                 storage.Safe.Add(item);
@@ -33,7 +33,7 @@ namespace NecklaceRefactoringKata
             }
             else if (item.IsSmall())
                 storage.Box.TopShelf.Add(item);
-            else if (item is Necklace && !item.IsLarge())
+            else if (item is Necklace && !item.IsHeavy())
                 storage.Box.TopShelf.Add(item);
             else if (item is Earring earring1 && earring1.Type == EarringType.Hoop)
                 storage.Tree.Add(earring1);
