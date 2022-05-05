@@ -25,8 +25,6 @@ namespace NecklaceRefactoringKata.Tests
         }
 
 
-
-
         [TestMethod()]
         public void PackPearlNecklace()
         {
@@ -38,6 +36,13 @@ namespace NecklaceRefactoringKata.Tests
         public void PackAmberNecklace()
         {
             var item = new Necklace(Type: NecklaceType.Beads, Stone: Jewel.Amber);
+            Approvals.Verify(PackItem(item, storage));
+        }
+        
+        [TestMethod()]
+        public void PackAmberChainNecklace()
+        {
+            var item = new Necklace(Type: NecklaceType.Chain, Stone: Jewel.Amber);
             Approvals.Verify(PackItem(item, storage));
         }
 
@@ -66,7 +71,7 @@ namespace NecklaceRefactoringKata.Tests
         [TestMethod()]
         public void PackPendantNecklace()
         {
-            var item = new PendantNecklace(Jewel.Amber,
+            var item = new PendantNecklace(
                 new Necklace(NecklaceType.Chain, Jewel.Plain),
                 new Pendant(Jewel.Amber));
             Approvals.Verify(PackItem(item, storage));
@@ -75,7 +80,7 @@ namespace NecklaceRefactoringKata.Tests
         [TestMethod()]
         public void PackPendantNecklaceLongChain()
         {
-            var item = new PendantNecklace(Jewel.Amber,
+            var item = new PendantNecklace(
                 new Necklace(NecklaceType.LongChain, Jewel.Plain),
                 new Pendant(Jewel.Amber));
             Approvals.Verify(PackItem(item, storage));

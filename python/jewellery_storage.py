@@ -43,6 +43,12 @@ class Jewellery:
 
 
 @dataclasses.dataclass
+class Ring(Jewellery):
+    def is_ring(self):
+        return True
+
+
+@dataclasses.dataclass
 class Earring(Jewellery):
     type: EarringType
 
@@ -51,6 +57,7 @@ class Earring(Jewellery):
 
     def is_earring(self):
         return True
+
 
 @dataclasses.dataclass
 class Necklace(Jewellery):
@@ -64,17 +71,29 @@ class Necklace(Jewellery):
 
 
 @dataclasses.dataclass
-class PendantNecklace(Necklace):
+class PendantNecklace(Jewellery):
     chain: Necklace
     pendant: Jewellery
 
+    def __init__(self, chain: Necklace, pendant: Jewellery):
+        Jewellery.__init__(self, pendant.stone)
+        assert chain.type in [NecklaceType.Chain, NecklaceType.LongChain]
+        self.chain = chain
+        self.pendant = pendant
+        self.type = NecklaceType.Pendant
+
     def is_large(self):
         return self.chain.is_large() or self.pendant.is_large()
+
+    def is_necklace(self):
+        return True
+
 
 @dataclasses.dataclass
 class Pendant(Jewellery):
     def is_small(self):
         return True
+
 
 class JewelleryBox:
     def __init__(self):
@@ -93,7 +112,3 @@ class JewelleryStorage:
 
     def is_in_travel_roll(self, item):
         return item in self.travel_roll
-
-
-
-

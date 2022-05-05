@@ -64,15 +64,20 @@ def test_pack_amber_necklace(jewellery_storage):
     log = pack_item(item, jewellery_storage)
     verify(log)
 
+def test_pack_amber_chain_necklace(jewellery_storage):
+    item = Necklace(stone=Jewel.Amber, type=NecklaceType.Chain)
+    log = pack_item(item, jewellery_storage)
+    verify(log)
+
+
 def test_pack_pendant(jewellery_storage):
     item = Pendant(stone=Jewel.Amber)
     log = pack_item(item, jewellery_storage)
     verify(log)
 
 def test_pack_pendant_necklace(jewellery_storage):
-    item = PendantNecklace(stone=Jewel.Amber,
-                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
-                           pendant=Jewellery(stone=Jewel.Amber), type=NecklaceType.Pendant)
+    item = PendantNecklace(chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Amber))
     log = pack_item(item, jewellery_storage)
     verify(log)
 
@@ -88,9 +93,8 @@ def test_pack_long_chain(jewellery_storage):
     verify(log)
 
 def test_pack_diamond_pendant_necklace(jewellery_storage):
-    item = PendantNecklace(stone=Jewel.Diamond,
-                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
-                           pendant=Jewellery(stone=Jewel.Diamond), type=NecklaceType.Pendant)
+    item = PendantNecklace(chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Diamond))
     log = pack_item(item, jewellery_storage)
     verify(log)
 

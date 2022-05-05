@@ -1,4 +1,4 @@
-Packing item PendantNecklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Pendant: 3>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>), pendant=Jewellery(stone=<Jewel.Diamond: 2>))
+Packing item PendantNecklace(stone=<Jewel.Diamond: 2>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>), pendant=Jewellery(stone=<Jewel.Diamond: 2>))
 Jewellery Storage:
     Box:
         Ring Compartment: []
@@ -6,5 +6,5 @@ Jewellery Storage:
         Main Section:     []
     Tree:                 []
     Travel Roll:          []
-    Safe:                 [PendantNecklace(stone=<Jewel.Diamond: 2>, type=<NecklaceType.Pendant: 3>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>), pendant=Jewellery(stone=<Jewel.Diamond: 2>))]
+    Safe:                 [PendantNecklace(stone=<Jewel.Diamond: 2>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.Chain: 2>), pendant=Jewellery(stone=<Jewel.Diamond: 2>))]
     On top of dresser:    []

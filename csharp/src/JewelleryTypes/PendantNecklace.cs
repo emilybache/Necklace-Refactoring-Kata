@@ -2,8 +2,8 @@
 
 namespace NecklaceRefactoringKata.JewelleryTypes
 {
-    public record PendantNecklace(Jewel Stone, Necklace Chain, JewelleryBase Pendant) 
-        : Necklace(NecklaceType.Pendant, Stone)
+    public record PendantNecklace(Necklace Chain, JewelleryBase Pendant) 
+        : Necklace(NecklaceType.Pendant, Pendant.Stone)
     {
         
         public override bool IsLarge()

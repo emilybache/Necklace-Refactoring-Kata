@@ -79,7 +79,16 @@ namespace NecklaceRefactoringKata.Tests
         {
             var item = new Necklace(Type: NecklaceType.Beads, Stone: Jewel.Amber);
             Approvals.Verify(PackItem(item, storage));
-        }     [TestMethod()]
+        }
+
+        [TestMethod()]
+        public void PackAmberChainNecklace()
+        {
+            var item = new Necklace(Type: NecklaceType.Chain, Stone: Jewel.Amber);
+            Approvals.Verify(PackItem(item, storage));
+        }
+
+        [TestMethod()]
         public void Pack_Long_Chain_Necklace()
         {
             var item = new Necklace(Type: NecklaceType.LongChain, Stone: Jewel.Plain);
@@ -89,27 +98,30 @@ namespace NecklaceRefactoringKata.Tests
         [TestMethod()]
         public void Pack_Pendant_Necklace()
         {
-            var item = new PendantNecklace(Stone: Jewel.Amber, new Necklace(NecklaceType.Chain, Jewel.Plain),
+            var item = new PendantNecklace(new Necklace(NecklaceType.Chain, Jewel.Plain),
                 new Pendant(Jewel.Amber));
             Approvals.Verify(PackItem(item, storage));
-        }      [TestMethod()]
+        }
+
+        [TestMethod()]
         public void Pack_Pendant()
         {
             var item = new Pendant(Jewel.Amber);
             Approvals.Verify(PackItem(item, storage));
         }
+
         [TestMethod()]
         public void Pack_Diamond_Pendant_Necklace()
         {
-            var item = new PendantNecklace(Stone: Jewel.Diamond, new Necklace(NecklaceType.Chain, Jewel.Plain),
+            var item = new PendantNecklace(new Necklace(NecklaceType.Chain, Jewel.Plain),
                 new Pendant(Jewel.Diamond));
             Approvals.Verify(PackItem(item, storage));
         }
-        
+
         [TestMethod()]
         public void Pack_UnknownItem()
         {
-            var item = new JewelleryBase(Jewel.Plain);
+            var item = new Ring(Jewel.Plain);
             Approvals.Verify(PackItem(item, storage));
         }
     }

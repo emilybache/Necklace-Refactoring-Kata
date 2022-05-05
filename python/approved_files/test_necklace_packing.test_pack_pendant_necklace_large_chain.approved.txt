@@ -1,4 +1,4 @@
-Packing item PendantNecklace(stone=<Jewel.Amber: 4>, type=<NecklaceType.Pendant: 3>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.LongChain: 4>), pendant=Jewellery(stone=<Jewel.Amber: 4>))
+Packing item PendantNecklace(stone=<Jewel.Amber: 4>, chain=Necklace(stone=<Jewel.Plain: 1>, type=<NecklaceType.LongChain: 4>), pendant=Jewellery(stone=<Jewel.Amber: 4>))
 Jewellery Storage:
     Box:
         Ring Compartment: []
