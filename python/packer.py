@@ -4,7 +4,7 @@ from jewellery_storage import Jewellery, JewelleryStorage, Jewel, EarringType, N
 def pack_necklace(item: Necklace, storage: JewelleryStorage):
     if item.stone == Jewel.Diamond:
         storage.safe.append(item)
-    elif not item.is_large():
+    elif not item.is_heavy():
         storage.box.top_shelf.append(item)
     elif item.type == NecklaceType.Pendant:
         storage.tree.append(item.chain)
@@ -14,7 +14,7 @@ def pack_necklace(item: Necklace, storage: JewelleryStorage):
 
 
 def pack(item: Jewellery, storage: JewelleryStorage):
-    if storage.is_in_travel_roll(item) and not item.is_large():
+    if storage.is_in_travel_roll(item) and not item.is_heavy():
         storage.box.top_shelf.append(item)
     elif item.stone == Jewel.Diamond:
         storage.safe.append(item)
@@ -23,7 +23,7 @@ def pack(item: Jewellery, storage: JewelleryStorage):
         storage.box.top_shelf.append(item.pendant)
     elif item.is_small():
         storage.box.top_shelf.append(item)
-    elif not item.is_large() and item.is_necklace():
+    elif not item.is_heavy() and item.is_necklace():
         storage.box.top_shelf.append(item)
     elif item.is_earring() and item.type == EarringType.Hoop:
         storage.tree.append(item)
