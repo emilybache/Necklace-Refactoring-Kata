@@ -26,7 +26,14 @@ namespace NecklaceRefactoringKata
                 storage.Box.TopShelf.Add(item);
             else if (item.Stone == Jewel.Diamond)
                 storage.Safe.Add(item);
+            else if (item is Necklace necklace1 && necklace1 is PendantNecklace pendantNecklace)
+            {
+                storage.Tree.Add(pendantNecklace.Chain);
+                storage.Box.TopShelf.Add(pendantNecklace.Pendant);
+            }
             else if (item.IsSmall())
+                storage.Box.TopShelf.Add(item);
+            else if (item is Necklace && !item.IsLarge())
                 storage.Box.TopShelf.Add(item);
             else if (item is Earring earring1 && earring1.Type == EarringType.Hoop)
                 storage.Tree.Add(earring1);
@@ -34,11 +41,6 @@ namespace NecklaceRefactoringKata
                 storage.Box.TopShelf.Add(earring2);
             else if (item is Earring earring3 && earring3.Type == EarringType.Drop)
                 storage.Box.MainSection.Add(earring3);
-            else if (item is Necklace necklace1 && necklace1 is PendantNecklace pendantNecklace)
-            {
-                storage.Tree.Add(pendantNecklace.Chain);
-                storage.Box.TopShelf.Add(pendantNecklace.Pendant);
-            }
             else if (item is Necklace necklace2)
                 storage.Tree.Add(necklace2);
 

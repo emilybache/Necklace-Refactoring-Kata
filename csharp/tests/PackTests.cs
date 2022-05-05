@@ -20,9 +20,25 @@ namespace NecklaceRefactoringKata.Tests
             //assert
             CollectionAssert.Contains(jewelleryStorage.Box.TopShelf, item);
         }
+        
+        
 
         //To devs: Write more tests here before you refactor
         //note: JewelleryBase types are records, so they automatically have value-based equality checks
         //and can be used with CollectionAssert
+        
+        [TestMethod()]
+        public void Test_Diamond_Pendant_Necklace()
+        {
+            //arrange
+            var jewelleryStorage = new JewelleryStorage();
+            var item = new PendantNecklace(new Necklace(NecklaceType.Chain, Jewel.Plain), new Pendant(Jewel.Diamond));
+            
+            //act
+            Packer.Pack(item, jewelleryStorage);
+
+            //assert
+            // TODO: pendant should be in safe but not chain
+        }
     }
 }

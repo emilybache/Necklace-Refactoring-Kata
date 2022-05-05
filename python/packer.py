@@ -18,7 +18,12 @@ def pack(item: Jewellery, storage: JewelleryStorage):
         storage.box.top_shelf.append(item)
     elif item.stone == Jewel.Diamond:
         storage.safe.append(item)
+    elif item.is_necklace() and item.type == NecklaceType.Pendant:
+        storage.tree.append(item.chain)
+        storage.box.top_shelf.append(item.pendant)
     elif item.is_small():
+        storage.box.top_shelf.append(item)
+    elif not item.is_large() and item.is_necklace():
         storage.box.top_shelf.append(item)
     elif item.is_earring() and item.type == EarringType.Hoop:
         storage.tree.append(item)
@@ -26,9 +31,6 @@ def pack(item: Jewellery, storage: JewelleryStorage):
         storage.box.top_shelf.append(item)
     elif item.is_earring() and item.type == EarringType.Drop:
         storage.box.main_section.append(item)
-    elif item.is_necklace() and item.type == NecklaceType.Pendant:
-        storage.tree.append(item.chain)
-        storage.box.top_shelf.append(item.pendant)
     elif item.is_necklace():
         storage.tree.append(item)
     else:
