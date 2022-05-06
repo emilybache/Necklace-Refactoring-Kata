@@ -77,7 +77,6 @@ class PendantNecklace(Jewellery):
 
     def __init__(self, chain: Necklace, pendant: Jewellery):
         Jewellery.__init__(self, pendant.stone)
-        assert chain.type in [NecklaceType.Chain, NecklaceType.LongChain]
         self.chain = chain
         self.pendant = pendant
         self.type = NecklaceType.Pendant
