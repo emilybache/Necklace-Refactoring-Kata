@@ -14,8 +14,8 @@ public final class PendantNecklace extends Necklace {
     }
 
     @Override
-    public boolean isLarge() {
-        return this.chain.isLarge() || this.pendant.isLarge();
+    public boolean isHeavy() {
+        return this.chain.isHeavy() || this.pendant.isHeavy();
     }
 
     @Override

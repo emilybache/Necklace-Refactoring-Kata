@@ -12,7 +12,7 @@ public class Packer {
     public static void packNecklace(Necklace item, JewelleryStorage storage) {
         if (item.stone == Jewel.Diamond) {
             storage.safe.add(item);
-        } else if (!item.isLarge()) {
+        } else if (!item.isHeavy()) {
             storage.box.topShelf.add(item);
         } else if (item instanceof PendantNecklace pendantNecklace) {
             storage.tree.add(pendantNecklace.chain);
@@ -23,7 +23,7 @@ public class Packer {
     }
 
     public static void pack(Jewellery item, JewelleryStorage storage) {
-        if (storage.IsInTravelRoll(item) && !item.isLarge()) {
+        if (storage.IsInTravelRoll(item) && !item.isHeavy()) {
             storage.box.topShelf.add(item);
         } else if (item.stone == Jewel.Diamond) {
             storage.safe.add(item);

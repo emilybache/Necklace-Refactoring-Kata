@@ -12,7 +12,7 @@ public sealed class Necklace extends Jewellery permits PendantNecklace {
     }
 
     @Override
-    public boolean isLarge() {
+    public boolean isHeavy() {
         return this.type == NecklaceType.Beads || this.type == NecklaceType.LongChain;
     }
 
