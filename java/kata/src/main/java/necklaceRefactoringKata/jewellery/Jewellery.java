@@ -13,7 +13,7 @@ public abstract sealed class Jewellery permits Bracelet, Earring, Necklace, Pend
         return false;
     }
 
-    public boolean isLarge() {
+    public boolean isHeavy() {
         return false;
     }
 

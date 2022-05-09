@@ -7,15 +7,15 @@ public final class PendantNecklace extends Necklace {
     public Necklace chain;
     public Jewellery pendant;
 
-    public PendantNecklace(Jewel stone, NecklaceType type, Necklace chain, Jewellery pendant) {
-        super(stone, type);
+    public PendantNecklace(Necklace chain, Jewellery pendant) {
+        super(pendant.stone, chain.type);
         this.chain = chain;
         this.pendant = pendant;
     }
 
     @Override
-    public boolean isLarge() {
-        return this.chain.isLarge() || this.pendant.isLarge();
+    public boolean isHeavy() {
+        return this.chain.isHeavy() || this.pendant.isHeavy();
     }
 
     @Override
@@ -35,7 +35,8 @@ public final class PendantNecklace extends Necklace {
     @Override
     public String toString() {
         return "PendantNecklace{" +
-                "pendant=" + pendant +
+                "chain=" + chain +
+                ", pendant=" + pendant +
                 ", type=" + type +
                 ", stone=" + stone +
                 '}';

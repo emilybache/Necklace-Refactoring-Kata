@@ -12,7 +12,7 @@ public final class Bracelet extends Jewellery {
     }
 
     @Override
-    public boolean isLarge() {
+    public boolean isHeavy() {
         return type == BraceletType.Cuff;
     }
 
