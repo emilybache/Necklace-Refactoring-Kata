@@ -1,0 +1,10 @@
+Packing item Necklace{type=Chain, stone=Amber}
+Jewellery Storage: 
+Box:
+    Ring Compartment: []
+    Top Shelf:        [Necklace{type=Chain, stone=Amber}]
+    Main Section:     []
+Tree:                 []
+Travel Roll:          []
+Safe:                 []
+On top of dresser:    []

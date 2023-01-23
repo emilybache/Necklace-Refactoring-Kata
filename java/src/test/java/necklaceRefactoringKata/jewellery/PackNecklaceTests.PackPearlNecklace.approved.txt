@@ -1,0 +1,10 @@
+Packing item Necklace{type=Beads, stone=Pearl}
+Jewellery Storage: 
+Box:
+    Ring Compartment: []
+    Top Shelf:        []
+    Main Section:     []
+Tree:                 [Necklace{type=Beads, stone=Pearl}]
+Travel Roll:          []
+Safe:                 []
+On top of dresser:    []

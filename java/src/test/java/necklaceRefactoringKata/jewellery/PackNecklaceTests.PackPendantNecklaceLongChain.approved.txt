@@ -1,0 +1,10 @@
+Packing item PendantNecklace{pendant=Pendant{stone=Amber}, type=LongChain, stone=Amber}
+Jewellery Storage: 
+Box:
+    Ring Compartment: []
+    Top Shelf:        [Pendant{stone=Amber}]
+    Main Section:     []
+Tree:                 [Necklace{type=LongChain, stone=Plain}]
+Travel Roll:          []
+Safe:                 []
+On top of dresser:    []

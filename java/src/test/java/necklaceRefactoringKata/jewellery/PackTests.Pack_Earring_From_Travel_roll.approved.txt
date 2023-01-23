@@ -1,0 +1,10 @@
+Packing item Earring{type=Drop, stone=Plain} (is in travel roll)
+Jewellery Storage: 
+Box:
+    Ring Compartment: []
+    Top Shelf:        [Earring{type=Drop, stone=Plain}]
+    Main Section:     []
+Tree:                 []
+Travel Roll:          []
+Safe:                 []
+On top of dresser:    []
