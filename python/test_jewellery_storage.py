@@ -11,7 +11,7 @@ def jewellery_storage():
 
 from packer import pack
 
-from fixtures import jewellery_storage, print_jewellery_storage, print_jewellery
+from fixtures import jewellery_storage, print_jewellery_storage, print_jewellery_storages, print_jewellery
 from doc_as_test_pytest import DocAsTest, doc, doc_module
 
 
@@ -111,3 +111,32 @@ def test_pack_unknown_item(doc, jewellery_storage):
     item = Jewellery(stone=Jewel.Plain)
     log = pack_item(item, jewellery_storage)
     doc.write(log)
+
+def test_pack_several_items(doc):
+    
+    items = [
+        Earring(type=EarringType.Stud, stone=Jewel.Amber),
+        Earring(type=EarringType.Stud, stone=Jewel.Diamond),
+        Earring(type=EarringType.Hoop, stone=Jewel.Plain),
+        Earring(type=EarringType.Drop, stone=Jewel.Plain),
+        Earring(type=EarringType.Drop, stone=Jewel.Pearl),
+        Necklace(stone=Jewel.Amber, type=NecklaceType.Beads),
+        Pendant(stone=Jewel.Amber),
+        PendantNecklace(chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Amber)),
+        Ring(stone=Jewel.Diamond),        
+        Ring(stone=Jewel.Amber),
+        Jewellery(stone=Jewel.Plain),
+    ]
+    
+    storages = []
+    
+    for item in items:
+        storage = JewelleryStorage()
+        pack(item, storage)
+        storages.append(storage)
+    
+    print(f"storages: {storages}")
+    
+    doc.write(print_jewellery_storages(storages))
+    

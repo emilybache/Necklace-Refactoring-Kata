@@ -13,3 +13,4 @@ include::test_jewellery_storage.test_pack_diamond_ring.approved.adoc[leveloffset
 include::test_jewellery_storage.test_pack_favourite_diamond_ring.approved.adoc[leveloffset=+1]
 include::test_jewellery_storage.test_pack_ring.approved.adoc[leveloffset=+1]
 include::test_jewellery_storage.test_pack_unknown_item.approved.adoc[leveloffset=+1]
+include::test_jewellery_storage.test_pack_several_items.approved.adoc[leveloffset=+1]
