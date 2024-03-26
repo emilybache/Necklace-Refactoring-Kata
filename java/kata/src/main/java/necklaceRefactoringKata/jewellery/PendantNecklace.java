@@ -8,7 +8,7 @@ public final class PendantNecklace extends Necklace {
     public Jewellery pendant;
 
     public PendantNecklace(Necklace chain, Jewellery pendant) {
-        super(pendant.stone, chain.type);
+        super(pendant.stone, NecklaceType.Pendant);
         this.chain = chain;
         this.pendant = pendant;
     }
