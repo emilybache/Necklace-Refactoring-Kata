@@ -1,0 +1,17 @@
+= Pack favourite diamond ring
+
+Packing item *Ring of Diamond* (is in travel roll)
+
+
+Jewellery Storage:
+
+[%autowidth]
+|====
+.3+| Box | Ring Compartment |   
+| Top Shelf |                   Ring of Diamond
+| Main Section |                
+2+| Tree |                      
+2+| Travel Roll |               
+2+| Safe |                      
+2+| On top of dresser |         
+|====

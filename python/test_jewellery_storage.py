@@ -82,9 +82,8 @@ def test_pack_pendant(doc, jewellery_storage):
     doc.write(log)
 
 def test_pack_pendant_necklace(doc, jewellery_storage):
-    item = PendantNecklace(stone=Jewel.Amber,
-                           chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
-                           pendant=Jewellery(stone=Jewel.Amber), type=NecklaceType.Pendant)
+    item = PendantNecklace(chain=Necklace(stone=Jewel.Plain, type=NecklaceType.Chain),
+                           pendant=Jewellery(stone=Jewel.Amber))
     log = pack_item(item, jewellery_storage)
     doc.write(log)
 

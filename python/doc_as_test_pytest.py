@@ -94,7 +94,7 @@ class DocAsTestNamer(PyTestNamer):
     ClassName = ''
     
     def __init__(self, request):
-        PyTestNamer.__init__(self, ".adoc")
+        PyTestNamer.__init__(self, request, ".adoc")
         self.config = None
         self.MethodName = request.node.name
         self.ClassName = os.path.splitext(request.fspath.basename)[0]
