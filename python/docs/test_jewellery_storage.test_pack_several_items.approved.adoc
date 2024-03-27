@@ -1,21 +1,60 @@
 = Pack several items
 
-Jewellery Storage:
+We show where an item will be placed when we packed it, in travel or not.
 
+.Jewellery Storage
 [%autowidth]
 |====
-.3+| Box | Ring Compartment a|   
-| Top Shelf a|                   * Stud Earring of Amber
+2.+| | | In travel
+
+.3+| Box | Ring Compartment 
+a| 
+
+a| 
+
+| Top Shelf                 
+a| * Stud Earring of Amber
 * Drop Earring of Pearl
 * Pendant of Amber
 * Jewellery of Amber
-| Main Section a|                * Drop Earring of Plain
-2+| Tree a|                      * Hoop Earring of Plain
+
+a| * Stud Earring of Amber
+* Stud Earring of Diamond
+* Hoop Earring of Plain
+* Drop Earring of Plain
+* Drop Earring of Pearl
+* Pendant of Amber
+* Chain Necklace of Plain with pendant Jewellery of Amber
+* Ring of Diamond
+* Ring of Amber
+* Jewellery of Plain
+
+| Main Section              
+a| * Drop Earring of Plain
+
+a| 
+
+2+| Tree                    
+a| * Hoop Earring of Plain
 * Beads Necklace of Amber
 * Chain Necklace of Plain
-2+| Travel Roll a|               
-2+| Safe a|                      * Stud Earring of Diamond
+
+a| * Beads Necklace of Amber
+
+2+| Travel Roll             
+a| 
+
+a| 
+
+2+| Safe                    
+a| * Stud Earring of Diamond
 * Ring of Diamond
-2+| On top of dresser a|         * Ring of Amber
+
+a| 
+
+2+| On top of dresser       
+a| * Ring of Amber
 * Jewellery of Plain
+
+a| 
 |====

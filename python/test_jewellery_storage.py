@@ -130,13 +130,19 @@ def test_pack_several_items(doc):
     ]
     
     storages = []
-    
     for item in items:
         storage = JewelleryStorage()
         pack(item, storage)
         storages.append(storage)
+        
+        
+    storages_in_travel = []
+    for item_in_travel_roll in items:
+        storage = JewelleryStorage()
+        storage.travel_roll.append(item_in_travel_roll)
+        pack(item_in_travel_roll, storage)
+        storages_in_travel.append(storage)
     
-    print(f"storages: {storages}")
-    
-    doc.write(print_jewellery_storages(storages))
+    doc.write("We show where an item will be placed when we packed it, in travel or not.\n\n")
+    doc.write(print_jewellery_storages(storages, storages_in_travel))
     

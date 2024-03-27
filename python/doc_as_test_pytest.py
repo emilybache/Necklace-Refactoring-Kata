@@ -34,12 +34,13 @@ class DocAsTest():
     def module_content(self, request, description):
         file_base_name = os.path.splitext(os.path.basename(request.node.name))[0]
         title = self.format_to_title(file_base_name)
+        options = ":table-caption!:\n\n"
 
         includes = "\n".join("include::{}[leveloffset=+1]".format(test) for test in self.tests)
         
         description_to_add = description.strip() + "\n\n" if description is not None else ""
 
-        return "= " + title + "\n" + description_to_add + includes
+        return "= " + title + "\n" + options + description_to_add + includes
 
     def test_content(self, request, description):
 

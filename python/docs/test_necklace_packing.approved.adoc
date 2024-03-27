@@ -1,4 +1,6 @@
 = Necklace packing
+:table-caption!:
+
 include::test_necklace_packing.test_pack_pearl_necklace.approved.adoc[leveloffset=+1]
 include::test_necklace_packing.test_pack_amber_necklace.approved.adoc[leveloffset=+1]
 include::test_necklace_packing.test_pack_diamond_necklace.approved.adoc[leveloffset=+1]

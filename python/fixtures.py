@@ -38,23 +38,33 @@ Jewellery Storage:
 """
     return contents
 
-def print_jewellery_storages(storages):
+def print_jewellery_storages(storages, storages_in_travel):
+    
+    def format_storage_x(storages, getter):
+        return "\n".join(["* " + print_jewelleries(getter(storage)) for storage in storages if len(getter(storage))>0])
     
     def format_storage(getter):
-        return "\n".join(["* " + print_jewelleries(getter(storage)) for storage in storages if len(getter(storage))>0])
-        
+        return f"{format_storage_x(storages, getter)}\n\na| {format_storage_x(storages_in_travel, getter)}"
+     
     contents = f"""\
-Jewellery Storage:
-
+.Jewellery Storage
 [%autowidth]
 |====
-.3+| Box | Ring Compartment a|   {format_storage(lambda x: x.box.ring_compartment )}
-| Top Shelf a|                   {format_storage(lambda x: x.box.top_shelf )}
-| Main Section a|                {format_storage(lambda x: x.box.main_section )}
-2+| Tree a|                      {format_storage(lambda x: x.tree )}
-2+| Travel Roll a|               {format_storage(lambda x: x.travel_roll)}
-2+| Safe a|                      {format_storage(lambda x: x.safe)}
-2+| On top of dresser a|         {format_storage(lambda x: x.dresser_top)}
+2.+| | | In travel
+
+.3+| Box | Ring Compartment \na| {format_storage(lambda x: x.box.ring_compartment )}
+
+| Top Shelf                 \na| {format_storage(lambda x: x.box.top_shelf )}
+
+| Main Section              \na| {format_storage(lambda x: x.box.main_section )}
+
+2+| Tree                    \na| {format_storage(lambda x: x.tree )}
+
+2+| Travel Roll             \na| {format_storage(lambda x: x.travel_roll)}
+
+2+| Safe                    \na| {format_storage(lambda x: x.safe)}
+
+2+| On top of dresser       \na| {format_storage(lambda x: x.dresser_top)}
 |====
 """
     return contents

@@ -1,4 +1,6 @@
 = Jewellery storage
+:table-caption!:
+
 include::test_jewellery_storage.test_pack_earring_stud.approved.adoc[leveloffset=+1]
 include::test_jewellery_storage.test_pack_diamond_earring_stud.approved.adoc[leveloffset=+1]
 include::test_jewellery_storage.test_pack_earring_hoop.approved.adoc[leveloffset=+1]
