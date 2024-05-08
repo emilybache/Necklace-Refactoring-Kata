@@ -1,0 +1,10 @@
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        PendantNecklace(Amber, Chain)
+    Main Section:     
+Tree:                 
+Travel Roll:          
+Safe:                 
+On top of dresser:    
+
