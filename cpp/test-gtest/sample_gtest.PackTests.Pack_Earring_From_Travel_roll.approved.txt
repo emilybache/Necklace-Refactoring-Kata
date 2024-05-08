@@ -1,0 +1,10 @@
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        Earring(Plain, Drop)
+    Main Section:     
+Tree:                 
+Travel Roll:          
+Safe:                 
+On top of dresser:    
+

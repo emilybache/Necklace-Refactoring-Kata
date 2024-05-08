@@ -1,0 +1,10 @@
+Jewellery Storage:
+Box:
+    Ring Compartment: 
+    Top Shelf:        
+    Main Section:     
+Tree:                 Necklace(Pearl, Beads)
+Travel Roll:          
+Safe:                 
+On top of dresser:    
+
